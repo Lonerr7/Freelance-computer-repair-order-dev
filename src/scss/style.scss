@@ -170,7 +170,7 @@
   background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   padding-top: 30px;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
   background-position: center top;
 
   &__nav {
@@ -292,6 +292,98 @@
 }
 
 // --- /hero ---
+
+
+// --- services ---
+
+.services {
+  &__title {
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 55px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+  }
+
+  &__items {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+    padding: 30px 0;
+
+    &:hover {
+      background-color: $color8;
+
+      .services__imgContainer{
+        background-color: $color9;
+        
+        svg {
+          fill:  $color10;
+          stroke:  $color10;
+          #Dribbble-Light-Preview {
+            fill: $color10;
+          }
+        }
+      }
+    }
+  }
+
+  &__itemInner {
+    display: flex;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  &__imgContainer {
+    margin-right: 28px;
+    width: 82px;
+    height: 82px;
+    background-color: $color7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__itemInfo {
+    flex: 1;
+  }
+
+  &__name {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $color2;
+    margin-bottom: 6px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    color: $color4;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// --- /services ---
 
 // === /main ===
 

@@ -3,9 +3,10 @@ import * as functions from './modules/functions.js';
 // Checking if browsers supports .webp
 functions.isWebp();
 
+// popup
 const dialog = document.querySelector('.popup');
 const closeModalBtn = dialog.querySelector('.popup__close');
-const openModalBtn = document.querySelector('.call');
+const openModalBtns = document.querySelectorAll('.open-modal');
 
 const closeOnOverlayClick = ({currentTarget, target}) => {
   const dialog = currentTarget;
@@ -30,7 +31,9 @@ const closeModal = () => {
   returnScroll();
 }
 
-openModalBtn.addEventListener('click', openModalAndBlockScroll);
+openModalBtns.forEach(btn => {
+  btn.addEventListener('click', openModalAndBlockScroll);
+})
 closeModalBtn.addEventListener('click', closeModal);
 dialog.addEventListener('click', closeOnOverlayClick);
 dialog.addEventListener('cancel', returnScroll);

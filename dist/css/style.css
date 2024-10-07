@@ -312,7 +312,7 @@ body {
 .hero {
   background-repeat: no-repeat;
   padding-top: 30px;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
   background-position: center top;
 }
 
@@ -436,6 +436,104 @@ body {
   width: 100%;
   height: 70px;
   font-weight: 500;
+}
+
+.services__title {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 55px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.services__items {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.services__item {
+  padding: 30px 0;
+}
+
+.services__item:hover {
+  background-color: #f4f5fe;
+}
+
+.services__item:hover .services__imgContainer {
+  background-color: #E8EAFE;
+}
+
+.services__item:hover .services__imgContainer svg {
+  fill: #8333CA;
+  stroke: #8333CA;
+}
+
+.services__item:hover .services__imgContainer svg #Dribbble-Light-Preview {
+  fill: #8333CA;
+}
+
+.services__itemInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.services__imgContainer {
+  margin-right: 28px;
+  width: 82px;
+  height: 82px;
+  background-color: #F7F8FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
+.services__img {
+  width: 50px;
+  height: 50px;
+}
+
+.services__itemInfo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.services__name {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #2e2e2e;
+  margin-bottom: 6px;
+}
+
+.services__price {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.services__btn {
+  color: #7d29c8;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.services__btn:hover {
+  text-decoration: none;
 }
 
 .webp .popup { background-image: url(../images/formmaster-bg.webp); }
