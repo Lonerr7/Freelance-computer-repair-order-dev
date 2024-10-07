@@ -86,6 +86,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
+  color: #2e2e2e;
 }
 
 .container {
@@ -104,7 +105,7 @@ body {
 }
 
 .header__list {
-  max-width: 50%;
+  max-width: 70%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,27 +122,6 @@ body {
   font-weight: 600;
   letter-spacing: 2px;
   color: #2e2e2e;
-}
-
-.no-webp .hero {
-  background-image: url(../images/hero-bg.jpg); }
-
-.hero {
-  background-repeat: no-repeat;
-  padding-top: 30px;
-  background-position: center top;
-}
-
-.hero__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .logo {
@@ -165,8 +145,8 @@ body {
 }
 
 .logo__img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin-right: 20px;
 }
 
@@ -219,6 +199,96 @@ body {
   width: 190px;
   height: 45px;
   font-weight: 600;
+}
+
+.no-webp .hero {
+  background-image: url(../images/hero-bg.jpg); }
+
+.hero {
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  background-position: center top;
+}
+
+.hero__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 90px;
+}
+
+.hero__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__title {
+  position: relative;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 900;
+  max-width: 500px;
+  color: #2e2e2e;
+  margin-bottom: 46px;
+}
+
+.hero__title::after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  left: 0;
+  width: 190px;
+  height: 1px;
+  background-color: #7d29c8;
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 75px;
+}
+
+.hero__tipItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 460px;
+  margin-bottom: 32px;
+}
+
+.hero__tipItem:last-child {
+  margin-bottom: 0;
+}
+
+.hero__tipImg {
+  margin-right: 35px;
+}
+
+.hero__tipImg {
+  width: 60px;
+  height: 60px;
+}
+
+.hero__tipsText {
+  font-size: 20px;
+}
+
+.hero__tipStress {
+  font-weight: 700;
+  color: #7d29c8;
 }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
