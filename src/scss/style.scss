@@ -1,0 +1,29 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+// === header ===
+
+.header {
+  padding-block: 16px;
+  background-color: $color1;
+
+  &__list {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}
+
+// === /header ===
+
+@import 'media';
