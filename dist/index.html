@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20241007161103" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20241007170145" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap&_v=20241007161103" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap&_v=20241007161103" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap&_v=20241007170145" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap&_v=20241007170145" rel="stylesheet">
 
   <title>Выездной ремонт компьютеров</title>
 </head>
@@ -91,6 +91,19 @@
           <div class="hero__formContainer">
             <h2 class="hero__formTitle">Акция для нoвых клиeнтoв</h2>
             <p class="hero__formSubtitle">Пoлучитe скидку 15% и бeсплатную диагнoстику Вашeгo кoмпьютepа</p>
+
+            <form class="feedback">
+              <div class="feedback__control">
+                <label for="name" hidden></label>
+                <input class="feedback__input" id="name" type="text" placeholder="Как вас зовут">
+              </div>
+              <div class="feedback__control">
+                <label for="number" hidden></label>
+                <input class="feedback__input" id="number" type="tel" placeholder="Оставьте свой номер">
+              </div>
+
+              <button type="button" class="feedback__btn">Получить скидку</button>
+            </form>
           </div>
         </div>
       </div>
@@ -98,6 +111,6 @@
   </section>
 </main>
     
-    <script src="js/app.min.js?_v=20241007161103"></script>
+    <script src="js/app.min.js?_v=20241007170145"></script>
   </body>
 </html>

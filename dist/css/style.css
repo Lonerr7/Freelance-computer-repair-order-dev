@@ -1,3 +1,4 @@
+.feedback__btn,
 .call {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -14,6 +15,7 @@
           box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
 }
 
+.feedback__btn:hover,
 .call:hover {
   background-color: #f94673;
 }
@@ -207,6 +209,7 @@ body {
 .hero {
   background-repeat: no-repeat;
   padding-top: 30px;
+  padding-bottom: 200px;
   background-position: center top;
 }
 
@@ -230,6 +233,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.hero__block {
+  margin-right: 60px;
+}
+
+.hero__block:last-child {
+  margin-right: 0;
 }
 
 .hero__title {
@@ -289,6 +300,73 @@ body {
 .hero__tipStress {
   font-weight: 700;
   color: #7d29c8;
+}
+
+.hero__formContainer {
+  text-align: center;
+  background: rgba(84, 88, 193, 0.9);
+  padding: 42px 27px 59px 27px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  max-width: 475px;
+}
+
+.hero__formTitle {
+  max-width: 300px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto 23px auto;
+}
+
+.hero__formSubtitle {
+  font-size: 22px;
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+
+.feedback__input {
+  display: inline-block;
+  width: 100%;
+  outline: none !important;
+  height: 60px;
+  border: #fff solid 1px;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 18px;
+  background: none;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.feedback__input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.feedback__input::-moz-placeholder {
+  color: #fff;
+}
+
+.feedback__input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.feedback__input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.feedback__input::placeholder {
+  color: #fff;
+}
+
+.feedback__btn {
+  font-size: 24px;
+  width: 100%;
+  height: 80px;
+  font-weight: 500;
 }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
