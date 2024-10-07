@@ -1,6 +1,30 @@
 $container: 1170px;
 $font-family1: "Inter", sans-serif;
-// $font-family2: 
+$font-family2: "Roboto Condensed", sans-serif;
 
 // === colors ===
 $color1: rgba(254, 254, 254, 0.8);
+$color2: #2e2e2e;
+$color3: #9124CD;
+$color4: #7d29c8;
+$white: #fff;
+$color5: #f94673;
+
+
+// === templates ===
+%call-button {
+  transition: all .2s;
+  display: block;
+  border-radius: 5px;
+  color: $color2;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  background: $white;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: $color5;
+  }
+}

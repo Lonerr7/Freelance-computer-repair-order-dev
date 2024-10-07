@@ -19,11 +19,106 @@
   }
 
   &__link {
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 2px;
+    color: $color2;
   }
 }
 
 // === /header ===
+
+
+// === main ===
+
+// --- hero ---
+.hero {
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  background-position: center top;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  &__img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  &__text {
+    display: block;
+    font-family: $font-family2;
+  }
+
+  &__text-main {
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  &__text-colored {
+    font-size: 16px;
+    font-weight: 700;
+    color: $color3;
+  }
+
+  &__slogan {
+    max-width: 240px;
+    height: 40px;
+    line-height: 20px;
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    border-left: 1px solid $color4;
+  }
+
+  
+}
+
+.tel {
+  &__number {
+    display: inline-block;
+    color: $color2;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  &__info {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.call {
+  @extend %call-button;
+  width: 190px;
+  height: 45px;
+  font-weight: 600;
+}
+// --- /hero ---
+
+// === /main ===
 
 @import 'media';
