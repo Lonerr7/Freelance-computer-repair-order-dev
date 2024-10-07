@@ -29,3 +29,21 @@ $color6: rgba(84, 88, 193, 0.9);
     background-color: $color5;
   }
 }
+
+%form-input {
+  display: inline-block;
+    width: 100%;
+    outline: none !important;
+    height: 60px;
+    border: $white solid 1px;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 18px;
+    background: none;
+    color: $white;
+    margin-bottom: 30px;
+
+    &::placeholder {
+      color: $white;
+    }
+}

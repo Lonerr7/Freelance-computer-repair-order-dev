@@ -1,10 +1,12 @@
 html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
 }
 
 body {
     font-family: $font-family1;
     color: $color2;
+    scrollbar-gutter: stable;
 }
 
 .container {

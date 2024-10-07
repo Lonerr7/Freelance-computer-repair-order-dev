@@ -1,5 +1,7 @@
 <main class="main">
   <section class="hero">
+    @@include('components/popup.html') 
+
     <div class="container">
       <nav class="hero__nav">
 
@@ -21,7 +23,7 @@
           <p class="tel__info">Работаем по всей России</p>
         </div>
         
-        <button class="call">
+        <button class="call" type="button">
           Вызвать мастера
         </button>
       </nav>
@@ -52,18 +54,7 @@
             <h2 class="hero__formTitle">Акция для нoвых клиeнтoв</h2>
             <p class="hero__formSubtitle">Пoлучитe скидку 15% и бeсплатную диагнoстику Вашeгo кoмпьютepа</p>
 
-            <form class="feedback">
-              <div class="feedback__control">
-                <label for="name" hidden></label>
-                <input class="feedback__input" id="name" type="text" placeholder="Как вас зовут">
-              </div>
-              <div class="feedback__control">
-                <label for="number" hidden></label>
-                <input class="feedback__input" id="number" type="tel" placeholder="Оставьте свой номер">
-              </div>
-
-              <button type="button" class="feedback__btn">Получить скидку</button>
-            </form>
+            @@include('components/feedback-form.html') 
           </div>
         </div>
       </div>
