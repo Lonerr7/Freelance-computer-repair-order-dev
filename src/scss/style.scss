@@ -576,6 +576,49 @@
 
 //  --- /why ---
 
+
+// --- guarantee ---
+
+.guarantee {
+  padding-top: 190px;
+  background: url(../images/garant.jpg) no-repeat center top;
+  min-height: 860px;
+
+  &__inner {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__info {
+    max-width: 550px;
+  }
+
+  &__title {
+    font-size: 44px;
+    margin-bottom: 62px;
+  }
+
+  &__color {
+    color: $color4;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    margin-bottom: 100px;
+  }
+
+  &__btn {
+    width: 70%;
+    height: 66px;
+    font-size: 22px;
+    background-color: $color12;
+    color: $white;
+    font-weight: 600;
+  }
+}
+
+// --- /guarantee ---
+
 // === /main ===
 
 @import 'media';

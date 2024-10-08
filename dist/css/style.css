@@ -762,6 +762,50 @@ body {
   height: 75px;
 }
 
+.no-webp .guarantee {
+  background: url(../images/garant.jpg) no-repeat center top; }
+
+.guarantee {
+  padding-top: 190px;
+  min-height: 860px;
+}
+
+.guarantee__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.guarantee__info {
+  max-width: 550px;
+}
+
+.guarantee__title {
+  font-size: 44px;
+  margin-bottom: 62px;
+}
+
+.guarantee__color {
+  color: #7d29c8;
+}
+
+.guarantee__subtitle {
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+
+.guarantee__btn {
+  width: 70%;
+  height: 66px;
+  font-size: 22px;
+  background-color: #5457c1;
+  color: #fff;
+  font-weight: 600;
+}
+
 .webp .popup { background-image: url(../images/formmaster-bg.webp); }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
@@ -773,3 +817,5 @@ body {
 .webp .get-price__text::after { background-image: url(../images/arrow.webp); }
 
 .webp .get-price__feedback { background-image: url(../images/formmaster-bg.webp); }
+
+.webp .guarantee { background: url(../images/garant.webp) no-repeat center top; }
