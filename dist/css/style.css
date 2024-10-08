@@ -711,6 +711,57 @@ body {
   resize: none;
 }
 
+.why {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eef3fa), to(#fff));
+  background: -o-linear-gradient(top, #eef3fa, #fff);
+  background: linear-gradient(to bottom, #eef3fa, #fff);
+  padding: 55px 0 10px 0;
+}
+
+.why__title {
+  font-size: 44px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.why__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.why__item {
+  width: 33%;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.why__item:last-child {
+  margin-right: 0;
+}
+
+.why__img {
+  margin-bottom: 20px;
+}
+
+.why__carImg {
+  width: 75px;
+  height: 75px;
+}
+
 .webp .popup { background-image: url(../images/formmaster-bg.webp); }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
