@@ -438,12 +438,16 @@ body {
   font-weight: 500;
 }
 
+.services {
+  padding-bottom: 65px;
+}
+
 .services__title {
   text-align: center;
   font-size: 44px;
   margin-bottom: 55px;
   letter-spacing: 0.5px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .services__items {
@@ -536,6 +540,95 @@ body {
   text-decoration: none;
 }
 
+.order {
+  padding-block: 55px;
+  background-color: #dde7f6;
+}
+
+.order__title {
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 55px;
+  font-weight: 500;
+}
+
+.no-webp .order__items {
+  background: url(../images/line.png) no-repeat 350px center; }
+
+.order__items {
+  padding-inline: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order__item {
+  max-width: 300px;
+  height: 200px;
+  position: relative;
+  padding-left: 45px;
+  margin-right: 20px;
+}
+
+.order__item:last-child {
+  margin-right: 0;
+}
+
+.no-webp .order__img {
+  background-image: url(../images/circle.png); }
+
+.order__img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  z-index: 9;
+}
+
+.order__itemInner {
+  position: relative;
+  z-index: 100;
+  padding: 30px 20px;
+  background-color: #f4f5fe;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order__itemText {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .webp .popup { background-image: url(../images/formmaster-bg.webp); }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
+
+.webp .order__items { background: url(../images/line.webp) no-repeat 350px center; }
+
+.webp .order__img { background-image: url(../images/circle.webp); }
