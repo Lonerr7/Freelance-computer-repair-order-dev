@@ -457,6 +457,82 @@
 
 // --- /service-order ---
 
+
+// --- get-price ---
+
+.get-price {
+  padding-block: 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 585px;
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-size: 44px;
+    padding-bottom: 25px;
+    position: relative;
+    margin-bottom: 22px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #9754d3;
+      width: 190px;
+      height: 1px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    margin-bottom: 62px;
+    font-weight: 500;
+  }
+
+  &__text {
+    position: relative;
+    font-size: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image: url(../images/arrow.png);
+      width: 97px;
+      height: 25px;
+    }
+  }
+
+  &__right {
+    flex: 1;
+  }
+
+  &__feedback {
+    background-image: url(../images/formmaster-bg.png);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    max-width: 475px;
+    padding: 42px 27px 59px 27px;
+  }
+
+  &__textarea {
+    padding-top: 10px;
+    height: 100px;
+    resize: none;
+  }
+}
+
+// --- /get-price ---
+
 // === /main ===
 
 @import 'media';

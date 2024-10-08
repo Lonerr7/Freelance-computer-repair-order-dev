@@ -36,22 +36,27 @@
 
 .feedback__input::-webkit-input-placeholder {
   color: #fff;
+  font-size: 16px;
 }
 
 .feedback__input::-moz-placeholder {
   color: #fff;
+  font-size: 16px;
 }
 
 .feedback__input:-ms-input-placeholder {
   color: #fff;
+  font-size: 16px;
 }
 
 .feedback__input::-ms-input-placeholder {
   color: #fff;
+  font-size: 16px;
 }
 
 .feedback__input::placeholder {
   color: #fff;
+  font-size: 16px;
 }
 
 html {
@@ -625,6 +630,87 @@ body {
   font-weight: 300;
 }
 
+.get-price {
+  padding-block: 60px;
+}
+
+.get-price__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.get-price__left {
+  max-width: 585px;
+  margin-right: 30px;
+}
+
+.get-price__title {
+  font-size: 44px;
+  padding-bottom: 25px;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.get-price__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #9754d3;
+  width: 190px;
+  height: 1px;
+}
+
+.get-price__subtitle {
+  font-size: 24px;
+  margin-bottom: 62px;
+  font-weight: 500;
+}
+
+.get-price__text {
+  position: relative;
+  font-size: 20px;
+}
+
+.no-webp .get-price__text::after {
+  background-image: url(../images/arrow.png); }
+
+.get-price__text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 97px;
+  height: 25px;
+}
+
+.get-price__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.no-webp .get-price__feedback {
+  background-image: url(../images/formmaster-bg.png); }
+
+.get-price__feedback {
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  max-width: 475px;
+  padding: 42px 27px 59px 27px;
+}
+
+.get-price__textarea {
+  padding-top: 10px;
+  height: 100px;
+  resize: none;
+}
+
 .webp .popup { background-image: url(../images/formmaster-bg.webp); }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
@@ -632,3 +718,7 @@ body {
 .webp .order__items { background: url(../images/line.webp) no-repeat 350px center; }
 
 .webp .order__img { background-image: url(../images/circle.webp); }
+
+.webp .get-price__text::after { background-image: url(../images/arrow.webp); }
+
+.webp .get-price__feedback { background-image: url(../images/formmaster-bg.webp); }
