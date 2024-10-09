@@ -1212,7 +1212,8 @@ body {
   .get-price__title,
   .why__title,
   .guarantee__title,
-  .photos__title {
+  .photos__title,
+  .review__title {
     font-size: 40px;
     margin-bottom: 30px;
   }
@@ -1291,6 +1292,25 @@ body {
 
   .photos {
     padding-block: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .review__text {
+    padding-inline: 0;
+    font-size: 18px;
+  }
+
+  .review__text:last-child {
+    margin-bottom: 30px;
+  }
+
+  .review__text-first::before {
+    display: none;
+  }
+
+  .review__text-second::after {
+    display: none;
   }
 }
 
@@ -1391,6 +1411,10 @@ body {
   .order__itemText {
     font-size: 16px;
   }
+
+  .review {
+    padding-block: 40px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1412,7 +1436,8 @@ body {
   .get-price__title,
   .why__title,
   .guarantee__title,
-  .photos__title {
+  .photos__title,
+  .review__title {
     padding-inline: 15px;
     font-size: 32px;
     margin-bottom: 20px;
@@ -1431,11 +1456,25 @@ body {
     font-size: 20px;
     margin-bottom: 30px;
   }
+
+  .review__text-second {
+    margin-bottom: 15px;
+  }
+
+  .popup__title {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 380px) {
   .photos__title {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup__title {
+    font-size: 22px;
   }
 }
 
