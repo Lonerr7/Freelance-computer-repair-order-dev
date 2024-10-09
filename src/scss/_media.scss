@@ -148,7 +148,7 @@
     margin: 0 auto 30px auto;
   }
 
-  .services__title, .order__title, .get-price__title, .why__title, .guarantee__title {
+  .services__title, .order__title, .get-price__title, .why__title, .guarantee__title, .photos__title {
     font-size: 40px;
     margin-bottom: 30px;
   }
@@ -208,6 +208,10 @@
   .guarantee__subtitle {
     font-size: 22px;
     margin-bottom: 50px;
+  }
+
+  .photos {
+    padding-block: 30px;
   }
 }
 
@@ -317,7 +321,7 @@
     }
   }
 
-  .services__title, .order__title, .get-price__title, .why__title, .guarantee__title {
+  .services__title, .order__title, .get-price__title, .why__title, .guarantee__title, .photos__title {
     padding-inline: 15px;
     font-size: 32px;
     margin-bottom: 20px;
@@ -335,5 +339,11 @@
   .guarantee__subtitle {
     font-size: 20px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .photos__title {
+    font-size: 25px;
   }
 }

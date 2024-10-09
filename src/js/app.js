@@ -58,8 +58,19 @@ new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-    
   },
+
+  breakpoints : {
+    800: {
+      slidesPerView: 3
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    100: {
+      slidesPerView: 1
+    }
+  }
 });
 
 // Burger
