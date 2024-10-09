@@ -205,18 +205,6 @@ body {
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.header__listItem {
-  margin-bottom: 20px;
-}
-
-.header__listItem:first-child {
-  margin-top: 10px;
-}
-
-.header__listItem:last-child {
-  margin-bottom: 0;
-}
-
 .mobile-menu__list {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
@@ -434,6 +422,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 90px;
+}
+
+.hero__nav-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
 }
 
 .hero__info {
@@ -999,11 +1000,9 @@ body {
   padding: 55px 0 80px 0;
 }
 
-.no-webp .footer__top {
-  background: url(../images/footer-bg.jpg) no-repeat center top; }
-
 .footer__top {
   padding-block: 20px;
+  background-color: #dde7f6;
 }
 
 .footer__nav {
@@ -1026,7 +1025,36 @@ body {
   color: #989898;
 }
 
+@media (max-width: 900px) {
+  .hero__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .hero__nav-block {
+    width: 520px;
+  }
+}
+
 @media (max-width: 750px) {
+  .header__listItem {
+    margin-bottom: 20px;
+  }
+
+  .header__listItem:first-child {
+    margin-top: 10px;
+  }
+
+  .header__listItem:last-child {
+    margin-bottom: 0;
+  }
+
   .burger {
     display: block;
   }
@@ -1049,6 +1077,41 @@ body {
   }
 }
 
+@media (max-width: 564px) {
+  .hero__nav {
+    text-align: center;
+  }
+
+  .hero__nav-block {
+    width: auto;
+  }
+
+  .logo,
+  .hero__nav-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .logo__link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo__slogan {
+    border-left: none;
+  }
+
+  .tel {
+    margin-bottom: 20px;
+  }
+}
+
 .webp .popup { background-image: url(../images/formmaster-bg.webp); }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
@@ -1066,5 +1129,3 @@ body {
 .webp .review__text-first::before { background-image: url(../images/note1.webp); }
 
 .webp .review__text-second::after { background-image: url(../images/note1.webp); }
-
-.webp .footer__top { background: url(../images/footer-bg.webp) no-repeat center top; }

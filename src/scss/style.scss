@@ -48,18 +48,6 @@
   }
 }
 
-.header__listItem {
-  &:first-child {
-    margin-top: 10px;
-  }
-
-  margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .mobile-menu {
   &__list {
     justify-content: start !important;
@@ -253,6 +241,13 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 90px;
+  }
+
+  &__nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
   }
 
   &__info {
@@ -814,7 +809,7 @@
 .footer {
   &__top {
     padding-block: 20px;
-    background: url(../images/footer-bg.jpg) no-repeat center top;
+    background-color: $color11;
   }
 
   &__nav {
@@ -836,6 +831,8 @@
   &__oferta {
     color: $color13;
   }
+
+  
 }
 
 // === /footer ===
