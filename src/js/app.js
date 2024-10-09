@@ -70,11 +70,19 @@ const mobileMenuLinks = document.querySelectorAll('.mobile-menu__link');
 burgerBtn.addEventListener('click', () => {
   burgerBtn.classList.toggle('active');
   mobileMenu.classList.toggle('active');
+
+  if (document.body.classList.contains('scroll-block')) {
+    document.body.classList.remove('scroll-block')
+  } else {
+    document.body.classList.add('scroll-block')
+  }
+
 });
 
 mobileMenuLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     burgerBtn.classList.remove('active');
     mobileMenu.classList.remove('active');
+    document.body.classList.remove('scroll-block')
   })
 })
