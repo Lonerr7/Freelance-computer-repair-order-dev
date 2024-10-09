@@ -1094,6 +1094,23 @@ body {
   }
 }
 
+@media (max-width: 960px) {
+  .guarantee {
+    padding-block: 50px;
+    background: none !important;
+    min-height: auto;
+  }
+
+  .guarantee__info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .guarantee__btn {
+    width: 100%;
+  }
+}
+
 @media (max-width: 750px) {
   .header__listItem {
     margin-bottom: 20px;
@@ -1193,7 +1210,8 @@ body {
   .services__title,
   .order__title,
   .get-price__title,
-  .why__title {
+  .why__title,
+  .guarantee__title {
     font-size: 40px;
     margin-bottom: 30px;
   }
@@ -1263,6 +1281,11 @@ body {
 
   .why {
     padding: 40px 0 10px 0;
+  }
+
+  .guarantee__subtitle {
+    font-size: 22px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1382,7 +1405,8 @@ body {
   .services__title,
   .order__title,
   .get-price__title,
-  .why__title {
+  .why__title,
+  .guarantee__title {
     padding-inline: 15px;
     font-size: 32px;
     margin-bottom: 20px;
@@ -1395,6 +1419,11 @@ body {
 
   .get-price__text {
     font-size: 18px;
+  }
+
+  .guarantee__subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 
