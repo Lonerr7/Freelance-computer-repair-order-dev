@@ -61,3 +61,20 @@ new Swiper('.swiper', {
     
   },
 });
+
+// Burger
+const burgerBtn = document.querySelector('.burger');
+const mobileMenu = document.querySelector('.mobile-menu__list');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu__link');
+
+burgerBtn.addEventListener('click', () => {
+  burgerBtn.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+});
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    burgerBtn.classList.remove('active');
+    mobileMenu.classList.remove('active');
+  })
+})

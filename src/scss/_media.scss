@@ -1,0 +1,22 @@
+// --- header ---
+
+@media (max-width: 750px) {
+  .burger {
+    display: block;
+  }
+
+  .header {
+    padding-block: 6px;
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: end;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
+
+// --- /header ---

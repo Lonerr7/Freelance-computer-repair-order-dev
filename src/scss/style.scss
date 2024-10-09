@@ -6,6 +6,81 @@
 
 // === header ===
 
+.burger {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: none;
+
+  span {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    height: 3px;
+    background-color: $color2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+
+    &:nth-child(1) {
+      top: 25%;
+    }
+
+    &:last-child {
+      top: 75%;
+    }
+  }
+
+  &.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.active span:last-child {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.header__listItem {
+  &:first-child {
+    margin-top: 10px;
+  }
+
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-menu {
+  &__list {
+    justify-content: start !important;
+    transition: all .2s ease;
+    position: fixed;
+    width: 100%;
+    max-width: 100% !important;
+    height: 160px;
+    display: block;
+    top: -500px;
+    right: 0;
+    flex-direction: column;
+    align-items: start;
+    background-color: $color1;
+  }
+
+  &__list.active {
+    top: 51px;
+  }
+}
+
 .header {
   padding-block: 16px;
   background-color: $color1;
