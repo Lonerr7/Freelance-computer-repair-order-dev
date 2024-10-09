@@ -16,6 +16,7 @@ $color9: #E8EAFE;
 $color10: #8333CA;
 $color11: #dde7f6;
 $color12: #5457c1;
+$color13: #989898;
 
 
 // === templates ===
@@ -53,4 +54,10 @@ $color12: #5457c1;
       color: $white;
       font-size: 16px;
     }
+}
+
+%page-h2-title {
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 55px;
 }

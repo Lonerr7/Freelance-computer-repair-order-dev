@@ -59,6 +59,18 @@
   font-size: 16px;
 }
 
+.pricing__title,
+.review__title,
+.photos__title,
+.guarantee__title,
+.why__title,
+.order__title,
+.services__title {
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -448,9 +460,6 @@ body {
 }
 
 .services__title {
-  text-align: center;
-  font-size: 44px;
-  margin-bottom: 55px;
   letter-spacing: 0.5px;
   font-weight: 500;
 }
@@ -551,9 +560,6 @@ body {
 }
 
 .order__title {
-  font-size: 44px;
-  text-align: center;
-  margin-bottom: 55px;
   font-weight: 500;
 }
 
@@ -718,12 +724,6 @@ body {
   padding: 55px 0 10px 0;
 }
 
-.why__title {
-  font-size: 44px;
-  margin-bottom: 55px;
-  text-align: center;
-}
-
 .why__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -783,11 +783,6 @@ body {
   max-width: 550px;
 }
 
-.guarantee__title {
-  font-size: 44px;
-  margin-bottom: 62px;
-}
-
 .guarantee__color {
   color: #7d29c8;
 }
@@ -808,12 +803,6 @@ body {
 
 .photos {
   padding: 40px 0 70px 0;
-}
-
-.photos__title {
-  font-size: 44px;
-  margin-bottom: 55px;
-  text-align: center;
 }
 
 .swiper {
@@ -853,13 +842,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.review__title {
-  font-size: 44px;
-  line-height: 44px;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .review__img-container {
@@ -923,6 +905,37 @@ body {
   text-align: center;
 }
 
+.pricing {
+  padding: 55px 0 80px 0;
+}
+
+.no-webp .footer__top {
+  background: url(../images/footer-bg.jpg) no-repeat center top; }
+
+.footer__top {
+  padding-block: 20px;
+}
+
+.footer__nav {
+  margin-bottom: 0;
+}
+
+.footer__bottom {
+  padding-block: 10px;
+  background-color: #2e2e2e;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer__copyright {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer__oferta {
+  color: #989898;
+}
+
 .webp .popup { background-image: url(../images/formmaster-bg.webp); }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
@@ -940,3 +953,5 @@ body {
 .webp .review__text-first::before { background-image: url(../images/note1.webp); }
 
 .webp .review__text-second::after { background-image: url(../images/note1.webp); }
+
+.webp .footer__top { background: url(../images/footer-bg.webp) no-repeat center top; }
