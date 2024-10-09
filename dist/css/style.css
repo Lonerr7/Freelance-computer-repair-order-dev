@@ -806,6 +806,34 @@ body {
   font-weight: 600;
 }
 
+.photos {
+  padding: 40px 0 70px 0;
+}
+
+.photos__title {
+  font-size: 44px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.swiper {
+  padding-bottom: 60px !important;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 34px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 42% !important;
+}
+
 .webp .popup { background-image: url(../images/formmaster-bg.webp); }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }

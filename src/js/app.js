@@ -1,4 +1,6 @@
 import * as functions from './modules/functions.js';
+import Swiper from 'swiper/bundle';
+// import 'swiper/css/bundle';
 
 // Checking if browsers supports .webp
 functions.isWebp();
@@ -38,3 +40,24 @@ closeModalBtn.addEventListener('click', closeModal);
 dialog.addEventListener('click', closeOnOverlayClick);
 dialog.addEventListener('cancel', returnScroll);
 
+// Slider
+new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+    
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    
+  },
+});

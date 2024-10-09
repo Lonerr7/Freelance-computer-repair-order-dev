@@ -619,6 +619,37 @@
 
 // --- /guarantee ---
 
+
+// --- photos ---
+
+.photos {
+  padding: 40px 0 70px 0;
+
+  &__title {
+    font-size: 44px;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+}
+
+.swiper {
+  padding-bottom: 60px !important; 
+
+  &-slide {
+    cursor: pointer;
+  }
+
+  &-button-prev::after, &-button-next::after {
+    font-size: 34px !important;
+  }
+
+  &-button-next, &-button-prev {
+    top: 42% !important;
+  }
+}
+
+// --- /photos ---
+
 // === /main ===
 
 @import 'media';
