@@ -1309,7 +1309,8 @@ body {
   .why__title,
   .guarantee__title,
   .photos__title,
-  .review__title {
+  .review__title,
+  .pricing__title {
     font-size: 40px;
     margin-bottom: 30px;
   }
@@ -1388,6 +1389,53 @@ body {
 
   .photos {
     padding-block: 30px;
+  }
+
+  .pricing {
+    padding: 30px 0 50px 0;
+  }
+
+  .pricing__tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .pricing__buttons {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+  }
+
+  .pricing__item {
+    margin-bottom: 0;
+  }
+
+  .pricing__item svg {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
+  .pricing__btn {
+    padding-block: 10px;
+    padding-inline: 40px;
+  }
+
+  .pricing__btnText {
+    font-size: 14px;
+  }
+
+  .pricing__content {
+    width: 100%;
+  }
+
+  .pricing__text--last {
+    margin-bottom: 30px;
   }
 }
 
@@ -1533,7 +1581,8 @@ body {
   .why__title,
   .guarantee__title,
   .photos__title,
-  .review__title {
+  .review__title,
+  .pricing__title {
     padding-inline: 15px;
     font-size: 32px;
     margin-bottom: 20px;
@@ -1559,6 +1608,15 @@ body {
 
   .popup__title {
     font-size: 26px;
+  }
+
+  .pricing__buttons {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing__text {
+    font-size: 14px;
   }
 }
 

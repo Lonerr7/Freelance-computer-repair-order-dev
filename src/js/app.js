@@ -105,7 +105,6 @@ const tabsContent = document.querySelectorAll('.pricing__block');
 
 tabsContainer.addEventListener('click', (e) => {
   const clicked = e.target.closest('.pricing__btn');
-  console.log(clicked.dataset);
 
   if (!clicked) {
     return;
