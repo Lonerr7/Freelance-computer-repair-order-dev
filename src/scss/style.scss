@@ -841,6 +841,14 @@
     }
   }
 
+  &__block {
+    display: none;
+  }
+
+  &__block--active {
+    display: block;
+  }
+
   &__content {
     width: 50%;
   }

@@ -97,3 +97,28 @@ mobileMenuLinks.forEach(link => {
     document.body.classList.remove('scroll-block')
   })
 })
+
+// Tabs
+const tabBtns = document.querySelectorAll('.pricing__btn');
+const tabsContainer = document.querySelector('.pricing__buttons');
+const tabsContent = document.querySelectorAll('.pricing__block');
+
+tabsContainer.addEventListener('click', (e) => {
+  const clicked = e.target.closest('.pricing__btn');
+  console.log(clicked.dataset);
+
+  if (!clicked) {
+    return;
+  }
+  
+  tabBtns.forEach(tab => {
+    tab.classList.remove('pricing__btn--active');
+  })
+  clicked.classList.add('pricing__btn--active');
+
+  // Active tabs content
+  tabsContent.forEach(tabContent => {
+    tabContent.classList.remove('pricing__block--active');
+  })
+  document.querySelector(`.pricing__block--${clicked.dataset.btn}`).classList.add('pricing__block--active')
+})

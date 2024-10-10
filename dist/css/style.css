@@ -1052,6 +1052,14 @@ body {
   stroke: #fff;
 }
 
+.pricing__block {
+  display: none;
+}
+
+.pricing__block--active {
+  display: block;
+}
+
 .pricing__content {
   width: 50%;
 }
