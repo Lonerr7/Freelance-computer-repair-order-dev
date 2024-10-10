@@ -797,6 +797,85 @@
   &__title {
     @extend %page-h2-title;
   }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__buttons {
+    width: 40%;
+    box-shadow: 0px 0px 50px rgba(51, 58, 69, 0.3);
+    background: #FFF;
+    border-radius: 8px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    padding-block: 20px;
+    padding-inline: 50px;
+    text-align: left;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+
+    svg {
+      position: absolute;
+      right: 25px;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+
+  &__btn--active {
+    background: linear-gradient(to bottom, #8b40ce, #c6439d);
+    border-radius: 8px;
+    color: $white;
+
+    svg {
+      fill: $white;
+      stroke: $white;
+    }
+  }
+
+  &__content {
+    width: 50%;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__text--last {
+    margin-bottom: 70px;
+  }
+
+  &__info {
+    border: #c6439d solid 1px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+
+  &__info-item {
+    padding-left: 10px;
+    padding-block: 5px;
+
+    &:nth-child(even) {
+      background-color: #F1EEFA;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+
+  &__info-text {
+    font-size: 14px;
+  }
 }
 
 // --- /pricing ---
