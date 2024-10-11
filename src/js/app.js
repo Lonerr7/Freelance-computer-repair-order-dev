@@ -124,7 +124,7 @@ tabsContainer.addEventListener('click', (e) => {
 // Send form
 const mailPath = 'mail.php'
 
-document.querySelectorAll('.uniForm').forEach( (e) => {
+document.querySelectorAll('.feedback').forEach( (e) => {
 
 	e.addEventListener('submit', function(e) {
 

@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20241010162556" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20241011133339" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap&_v=20241010162556" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap&_v=20241010162556" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap&_v=20241011133339" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap&_v=20241011133339" rel="stylesheet">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241010162556"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241011133339"
 />
 
 
@@ -34,13 +34,13 @@
             <a class="header__link" href="#services">Наши услуги</a> 
           </li>
           <li class="header__listItem">
-            <a class="header__link" href="#">Узнать стоимость</a>
+            <a class="header__link" href="#get-price">Узнать стоимость</a>
           </li>
           <li class="header__listItem">
-            <a class="header__link" href="#">Отзывы</a>
+            <a class="header__link" href="#review">Отзывы</a>
           </li>
           <li class="header__listItem">
-            <a class="header__link" href="#">Гарантия</a>
+            <a class="header__link" href="#guarantee">Гарантия</a>
           </li>
         </ul>
       </nav>
@@ -288,7 +288,7 @@
     </div>
   </div>
 </section>
-  <section class="get-price">
+  <section class="get-price" id="get-price">
   <div class="container">
     <div class="get-price__inner">
       <div class="get-price__left">
@@ -299,13 +299,19 @@
   
       <div class="get-price__right">
         <form class="feedback get-price__feedback">
+           <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Repair Service Website">
+          <input type="hidden" name="admin_email" value="krabik2342@gmail.com">  <!--! Изменить потом на почту клиента-->
+          <input type="hidden" name="form_subject" value="Форма во всплывающем окне">
+          <!-- END Hidden Required Fields -->
+
           <div class="feedback__control">
-            <label for="name" hidden></label>
-            <textarea class="feedback__input get-price__textarea" id="name" type="text" placeholder="Вкратце опишите проблему"></textarea>
+            <label for="problem" hidden></label>
+            <textarea class="feedback__input get-price__textarea" id="problem" name="problem" type="text" placeholder="Вкратце опишите проблему"></textarea>
           </div>
           <div class="feedback__control">
             <label for="number" hidden></label>
-            <input class="feedback__input" id="number" type="tel" placeholder="Номер для ответа" required>
+            <input class="feedback__input" id="number" name="number" type="tel" placeholder="Номер для ответа" required>
           </div>
         
           <button type="button" class="feedback__btn">Получить скидку</button>
@@ -337,7 +343,7 @@
     </ul>
   </div>
 </section>
-  <section class="guarantee">
+  <section class="guarantee" id="guarantee">
   <div class="container">
     <div class="guarantee__inner">
       <div class="guarantee__info">
@@ -398,7 +404,7 @@
     </div>
   </div>
 </section>
-  <section class="review">
+  <section class="review" id="review">
   <div class="container">
     <div class="review__inner">
       <h2 class="review__title">95% наших клиeнтoв <br> peкoмeндуют знакoмым</h2>
@@ -623,7 +629,7 @@
   </div>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241010162556"></script>
-    <script src="js/app.min.js?_v=20241010162556"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241011133339"></script>
+    <script src="js/app.min.js?_v=20241011133339"></script>
   </body>
 </html>

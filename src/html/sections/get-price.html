@@ -1,4 +1,4 @@
-<section class="get-price">
+<section class="get-price" id="get-price">
   <div class="container">
     <div class="get-price__inner">
       <div class="get-price__left">
@@ -9,13 +9,19 @@
   
       <div class="get-price__right">
         <form class="feedback get-price__feedback">
+           <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Repair Service Website">
+          <input type="hidden" name="admin_email" value="krabik2342@gmail.com">  <!--! Изменить потом на почту клиента-->
+          <input type="hidden" name="form_subject" value="Форма во всплывающем окне">
+          <!-- END Hidden Required Fields -->
+
           <div class="feedback__control">
-            <label for="name" hidden></label>
-            <textarea class="feedback__input get-price__textarea" id="name" type="text" placeholder="Вкратце опишите проблему"></textarea>
+            <label for="problem" hidden></label>
+            <textarea class="feedback__input get-price__textarea" id="problem" name="problem" type="text" placeholder="Вкратце опишите проблему"></textarea>
           </div>
           <div class="feedback__control">
             <label for="number" hidden></label>
-            <input class="feedback__input" id="number" type="tel" placeholder="Номер для ответа" required>
+            <input class="feedback__input" id="number" name="number" type="tel" placeholder="Номер для ответа" required>
           </div>
         
           <button type="button" class="feedback__btn">Получить скидку</button>
