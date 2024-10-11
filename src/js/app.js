@@ -1,6 +1,5 @@
 import * as functions from './modules/functions.js';
 import Swiper from 'swiper/bundle';
-import $ from 'jquery';
 
 // Checking if browsers supports .webp
 functions.isWebp();
@@ -123,27 +122,45 @@ tabsContainer.addEventListener('click', (e) => {
 })
 
 // Send form  
-jQuery('.feedback').click( function() {
-  var form = jQuery(this).closest('form');
-  
-  if ( form.valid() ) {
-    form.css('opacity','.5');
-    var actUrl = form.attr('action');
+const forms = document.querySelectorAll('.feedback');
+const results = document.querySelectorAll('.feedback__result');
 
-    jQuery.ajax({
-      url: actUrl,
-      type: 'post',
-      dataType: 'html',
-      data: form.serialize(),
-      success: function(data) {
-        form.html(data);
-        form.css('opacity','1');
-                //form.find('.status').html('форма отправлена успешно');
-                //$('#myModal').modal('show') // для бутстрапа
-      },
-      error:	 function() {
-           form.find('.status').html('серверная ошибка');
-      }
-    });
-  }
-});
+
+forms.forEach(form => {
+  form.addEventListener('submit', function(e) {
+    const resultDivNumber = form.dataset.form;
+    e.preventDefault();
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+    results[resultDivNumber].innerHTML = "Отправляем..."
+  
+      fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+              },
+              body: json
+          })
+          .then(async (response) => {
+              let json = await response.json();
+              if (response.status == 200) {
+                  results[resultDivNumber].textContent = "Письмо отправлено. В ближайшее время мы с вами свяжемся.";
+              } else {
+                  console.log(response);
+                  results[resultDivNumber].innerHTML = json.message;
+              }
+          })
+          .catch(error => {
+              console.log(error);
+              results[resultDivNumber].textContent = "Что-то пошло не так. Попробуйте позже в другой раз!";
+          })
+          .then(function() {
+              form.reset();
+              setTimeout(() => {
+                  results[resultDivNumber].style.display = "none";
+              }, 5000);
+          });
+  });
+})

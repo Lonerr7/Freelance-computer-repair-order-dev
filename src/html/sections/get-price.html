@@ -8,7 +8,12 @@
       </div>
   
       <div class="get-price__right">
-        <form class="feedback get-price__feedback">
+        <form class="feedback get-price__feedback" id="form" method="POST" data-form="2">
+          <!-- Настройки формы и формата емэйла -->
+          <input type="hidden" name="access_key" value="0acf3838-a3e2-4194-aeca-04a7d6d87dd6">
+          <input type="hidden" name="subject" value="Запрос на ремонт">
+          <input type="hidden" name="from_name" value="PC Repair Website">
+
          <div class="feedback__control">
             <label for="problem" hidden></label>
             <textarea class="feedback__input get-price__textarea" id="problem" name="problem" type="text" placeholder="Вкратце опишите проблему"></textarea>
@@ -17,8 +22,11 @@
             <label for="number" hidden></label>
             <input class="feedback__input" id="number" name="number" type="tel" placeholder="Номер для ответа" required>
           </div>
+
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         
-          <button type="button" class="feedback__btn">Получить скидку</button>
+          <button type="submit" class="feedback__btn">Получить скидку</button>
+          <div class="feedback__result get-price__result" id="result"></div>
         </form>
       </div>
     </div>

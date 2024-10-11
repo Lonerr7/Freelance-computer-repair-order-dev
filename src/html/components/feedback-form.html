@@ -1,4 +1,9 @@
-<form class="feedback" action="sender.php">
+<form class="feedback" method="POST" id="form" data-form="0">
+   <!-- Настройки формы и формата емэйла -->
+  <input type="hidden" name="access_key" value="0acf3838-a3e2-4194-aeca-04a7d6d87dd6">
+  <input type="hidden" name="subject" value="Запрос на ремонт">
+  <input type="hidden" name="from_name" value="PC Repair Website">
+
    <div class="feedback__control">
     <label for="name" hidden></label>
     <input class="feedback__input" id="name" name="name" type="text" placeholder="Как вас зовут" required>
@@ -8,6 +13,8 @@
     <input class="feedback__input" id="phone" name="phone"  type="tel" placeholder="Оставьте свой номер" required>
   </div>
 
-  <button class="feedback__btn" type="button">Получить скидку</button>
-  <div class="status"></div>
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+  <button class="feedback__btn" type="submit">Получить скидку</button>
+  <div class="feedback__result" id="result"></div>
 </form>
