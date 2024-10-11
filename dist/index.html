@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20241011133339" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20241011141708" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap&_v=20241011133339" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap&_v=20241011133339" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap&_v=20241011141708" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap&_v=20241011141708" rel="stylesheet">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241011133339"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20241011141708"
 />
 
 
@@ -84,23 +84,18 @@
       Вызвать мастера
     </h2>
   
-    <form class="feedback">
-  <!-- Hidden Required Fields -->
-  <input type="hidden" name="project_name" value="Repair Service Website">
-  <input type="hidden" name="admin_email" value="krabik2342@gmail.com">  <!--! Изменить потом на почту клиента-->
-  <input type="hidden" name="form_subject" value="Форма во всплывающем окне">
-  <!-- END Hidden Required Fields -->
-
-  <div class="feedback__control">
+    <form class="feedback" action="sender.php">
+   <div class="feedback__control">
     <label for="name" hidden></label>
-    <input class="feedback__input" id="name" name="name"  type="text" placeholder="Как вас зовут" required>
+    <input class="feedback__input" id="name" name="name" type="text" placeholder="Как вас зовут" required>
   </div>
   <div class="feedback__control">
-    <label for="number" hidden></label>
-    <input class="feedback__input" id="number" name="number"  type="tel" placeholder="Оставьте свой номер" required>
+    <label for="phone" hidden></label>
+    <input class="feedback__input" id="phone" name="phone"  type="tel" placeholder="Оставьте свой номер" required>
   </div>
 
-  <button class="feedback__btn">Получить скидку</button>
+  <button class="feedback__btn" type="button">Получить скидку</button>
+  <div class="status"></div>
 </form> 
 
     <button class="popup__close" type="button">
@@ -162,23 +157,18 @@
           <h2 class="hero__formTitle">Акция для нoвых клиeнтoв</h2>
           <p class="hero__formSubtitle">Пoлучитe скидку 15% и бeсплатную диагнoстику Вашeгo кoмпьютepа</p>
 
-          <form class="feedback">
-  <!-- Hidden Required Fields -->
-  <input type="hidden" name="project_name" value="Repair Service Website">
-  <input type="hidden" name="admin_email" value="krabik2342@gmail.com">  <!--! Изменить потом на почту клиента-->
-  <input type="hidden" name="form_subject" value="Форма во всплывающем окне">
-  <!-- END Hidden Required Fields -->
-
-  <div class="feedback__control">
+          <form class="feedback" action="sender.php">
+   <div class="feedback__control">
     <label for="name" hidden></label>
-    <input class="feedback__input" id="name" name="name"  type="text" placeholder="Как вас зовут" required>
+    <input class="feedback__input" id="name" name="name" type="text" placeholder="Как вас зовут" required>
   </div>
   <div class="feedback__control">
-    <label for="number" hidden></label>
-    <input class="feedback__input" id="number" name="number"  type="tel" placeholder="Оставьте свой номер" required>
+    <label for="phone" hidden></label>
+    <input class="feedback__input" id="phone" name="phone"  type="tel" placeholder="Оставьте свой номер" required>
   </div>
 
-  <button class="feedback__btn">Получить скидку</button>
+  <button class="feedback__btn" type="button">Получить скидку</button>
+  <div class="status"></div>
 </form> 
         </div>
       </div>
@@ -299,13 +289,7 @@
   
       <div class="get-price__right">
         <form class="feedback get-price__feedback">
-           <!-- Hidden Required Fields -->
-          <input type="hidden" name="project_name" value="Repair Service Website">
-          <input type="hidden" name="admin_email" value="krabik2342@gmail.com">  <!--! Изменить потом на почту клиента-->
-          <input type="hidden" name="form_subject" value="Форма во всплывающем окне">
-          <!-- END Hidden Required Fields -->
-
-          <div class="feedback__control">
+         <div class="feedback__control">
             <label for="problem" hidden></label>
             <textarea class="feedback__input get-price__textarea" id="problem" name="problem" type="text" placeholder="Вкратце опишите проблему"></textarea>
           </div>
@@ -629,7 +613,7 @@
   </div>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241011133339"></script>
-    <script src="js/app.min.js?_v=20241011133339"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241011141708"></script>
+    <script src="js/app.min.js?_v=20241011141708"></script>
   </body>
 </html>

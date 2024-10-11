@@ -1,5 +1,6 @@
 import * as functions from './modules/functions.js';
 import Swiper from 'swiper/bundle';
+import $ from 'jquery';
 
 // Checking if browsers supports .webp
 functions.isWebp();
@@ -121,29 +122,28 @@ tabsContainer.addEventListener('click', (e) => {
   document.querySelector(`.pricing__block--${clicked.dataset.btn}`).classList.add('pricing__block--active')
 })
 
-// Send form
-const mailPath = 'mail.php'
+// Send form  
+jQuery('.feedback').click( function() {
+  var form = jQuery(this).closest('form');
+  
+  if ( form.valid() ) {
+    form.css('opacity','.5');
+    var actUrl = form.attr('action');
 
-document.querySelectorAll('.feedback').forEach( (e) => {
-
-	e.addEventListener('submit', function(e) {
-
-		let th      = this,
-		    params  = new FormData(this),
-		    request = new XMLHttpRequest()
-
-		request.open('POST', mailPath, true)
-		request.send(params)
-
-		request.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				setTimeout(function() { th.reset() }, 1000)
-				alert('Thank you!')
-			}
-		}
-
-		e.preventDefault()
-
-	})
-
-})
+    jQuery.ajax({
+      url: actUrl,
+      type: 'post',
+      dataType: 'html',
+      data: form.serialize(),
+      success: function(data) {
+        form.html(data);
+        form.css('opacity','1');
+                //form.find('.status').html('форма отправлена успешно');
+                //$('#myModal').modal('show') // для бутстрапа
+      },
+      error:	 function() {
+           form.find('.status').html('серверная ошибка');
+      }
+    });
+  }
+});
