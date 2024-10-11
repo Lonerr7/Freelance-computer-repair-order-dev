@@ -1,12 +1,18 @@
 <form class="feedback">
+  <!-- Hidden Required Fields -->
+  <input type="hidden" name="project_name" value="Repair Service Website">
+  <input type="hidden" name="admin_email" value="krabik2342@gmail.com">  <!--! Изменить потом на почту клиента-->
+  <input type="hidden" name="form_subject" value="Форма во всплывающем окне">
+  <!-- END Hidden Required Fields -->
+
   <div class="feedback__control">
     <label for="name" hidden></label>
-    <input class="feedback__input" id="name" type="text" placeholder="Как вас зовут" required>
+    <input class="feedback__input" id="name" name="name"  type="text" placeholder="Как вас зовут" required>
   </div>
   <div class="feedback__control">
     <label for="number" hidden></label>
-    <input class="feedback__input" id="number" type="tel" placeholder="Оставьте свой номер" required>
+    <input class="feedback__input" id="number" name="number"  type="tel" placeholder="Оставьте свой номер" required>
   </div>
 
-  <button type="button" class="feedback__btn">Получить скидку</button>
+  <button class="feedback__btn">Получить скидку</button>
 </form>

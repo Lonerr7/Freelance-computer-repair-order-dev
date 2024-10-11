@@ -1,6 +1,5 @@
 import * as functions from './modules/functions.js';
 import Swiper from 'swiper/bundle';
-// import 'swiper/css/bundle';
 
 // Checking if browsers supports .webp
 functions.isWebp();
@@ -120,4 +119,31 @@ tabsContainer.addEventListener('click', (e) => {
     tabContent.classList.remove('pricing__block--active');
   })
   document.querySelector(`.pricing__block--${clicked.dataset.btn}`).classList.add('pricing__block--active')
+})
+
+// Send form
+const mailPath = 'mail.php'
+
+document.querySelectorAll('.uniForm').forEach( (e) => {
+
+	e.addEventListener('submit', function(e) {
+
+		let th      = this,
+		    params  = new FormData(this),
+		    request = new XMLHttpRequest()
+
+		request.open('POST', mailPath, true)
+		request.send(params)
+
+		request.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				setTimeout(function() { th.reset() }, 1000)
+				alert('Thank you!')
+			}
+		}
+
+		e.preventDefault()
+
+	})
+
 })
